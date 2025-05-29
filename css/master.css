@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;700&display=swap");
+
+:root {
+  --vermelho: #E31937;
+  --azul: #0055A4;
+  --azul-claro: #E6F0FA;
+  --vermelho-claro: #FCE8EB;
+  --cinza-bg: #F5F7FA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 5rem;
+  background-color: white;
+}
+
+nav .logo {
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+}
+
+nav .logo i {
+  color: var(--vermelho);
+  padding-left: 0.75rem;
+}
+
+nav .bars-menu {
+  display: none;
+}
+
+nav .logo h4 {
+  font-family: "Lalezar", cursive;
+  color: var(--azul);
+}
+
+nav .nav-items {
+  display: flex;
+  list-style-type: none;
+}
+
+nav .nav-items .nav-item {
+  padding: 0 1rem;
+}
+
+nav .nav-link {
+  text-decoration: none;
+  color: var(--azul);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+nav .nav-link:hover {
+  color: var(--vermelho);
+  transition: 0.3s ease;
+}
+
+.hero {
+  background-color: var(--azul-claro);
+}
+
+.hero-section {
+  max-width: 1366px;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+.hero-section .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section .content h4 {
+  color: var(--vermelho);
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section .content h1 {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+  color: var(--azul);
+}
+
+.hero-section .content p {
+  color: #333;
+  font-size: 1.4rem;
+}
+
+.hero-section .content p span.highlight {
+  color: var(--vermelho);
+  font-weight: 700;
+}
+
+.btn {
+  width: 15rem;
+  margin-top: 3rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, var(--vermelho), #C8102E);
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, var(--azul), #003D7A);
+  cursor: pointer;
+}
+
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-whatsapp {
+  display: block;
+  text-align: center;
+  margin: 8px 0;
+  font-weight: bold;
+  color: #fff;
+  background: #25d366;
+  border-radius: 5px;
+  padding: 6px 0;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.btn-whatsapp:hover {
+  background: #128c7e;
+}
+
+section.features {
+  padding: 5rem 0;
+  background-color: white;
+}
+
+section.features .features-section {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.features-section h4 {
+  color: var(--vermelho);
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.features-section .qualities {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-section .qualities .quality {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--cinza-bg);
+  padding: 2rem;
+  max-width: 17rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  transition: all 0.3s;
+}
+
+.features-section .qualities .quality:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 85, 164, 0.1);
+  border: 2px solid var(--vermelho);
+}
+
+.qualities .quality i {
+  font-size: 2rem;
+  color: var(--azul);
+  margin-bottom: 1rem;
+}
+
+.qualities .quality h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: var(--azul);
+}
+
+.qualities .quality p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #555;
+}
+
+.newest-phones {
+  padding: 5rem 0;
+  background-color: var(--cinza-bg);
+}
+
+.newest-phones .phones-section {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.phones-section h4 {
+  color: var(--vermelho);
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.phones-section .phones {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.phones .phone {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s;
+}
+
+.phones .phone:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(227, 25, 55, 0.2);
+}
+
+.phone img {
+  margin-bottom: 1rem;
+  width: 100%;
+  height: auto;
+  transition: all 0.3s;
+}
+
+.phone img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.phone h3 {
+  font-size: 1.6rem;
+  color: var(--azul);
+  margin-bottom: 0.5rem;
+}
+
+.phone .price {
+  color: var(--vermelho);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+footer {
+  background-color: var(--azul);
+  color: white;
+  padding: 3rem 0;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+.footer-section p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.footer-section .socials {
+  margin-bottom: 1rem;
+}
+
+.footer-section .socials i {
+  padding: 0 1rem;
+  font-size: 1.6rem;
+  color: white;
+  transition: all 0.3s;
+}
+
+.footer-section .socials i:hover {
+  color: var(--vermelho-claro);
+  cursor: pointer;
+}
+
+/* Media Queries (mantidos originais com ajustes de cores) */
+@media (max-width: 1300px) {
+  * {
+    font-size: 85%;
+  }
+}
+
+@media (max-width: 1175px) {
+  * { 
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 1000px) {
+  * {
+    text-align: center;
+  }
+  .hero img {
+    display: none;
+  }
+  .hero-section {
+    align-items: center;
+    padding: 2rem 0;
+    width: 80%;
+  }
+  .features-section .qualities {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 660px) {
+  .phones-section .phones {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 504px) {
+  .phones-section .phones {
+    grid-template-columns: 1fr;
+  }
+  nav .nav-items {
+    background-color: var(--azul);
+  }
+}
